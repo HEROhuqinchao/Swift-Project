@@ -23,6 +23,8 @@ pod 'Kingfisher'
 pod 'Reusable'
 pod 'TYCyclePagerView'
 pod 'Result'
+
+pod 'AutoInch'   #AutoInch - 优雅的iPhone等比例/全尺寸精准适配工具
 #pod 'AliyunOSSiOS'
 #Objective-C
 #pod 'MJExtension'

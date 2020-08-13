@@ -1,5 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-Swift-Project-Swift-ProjectUITests/Pods-Swift-Project-Swift-ProjectUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/AutoInch/AutoInch.framework
 ${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework
 ${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework
 ${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework
