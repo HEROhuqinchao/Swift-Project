@@ -23,9 +23,11 @@ let bcBottomBarHeight: CGFloat = isIphoneX ? 34 : 0
 //当前的视图
 var topVC: UIViewController? {
     var resultVC: UIViewController?
-    resultVC = _topVC(UIApplication.shared.windows.first { $0.isKeyWindow }?.rootViewController)
-    while resultVC?.presentedViewController != nil {
-        resultVC = _topVC(resultVC?.presentedViewController)
+    DispatchQueue.main.async {
+        resultVC = _topVC(UIApplication.shared.windows.first { $0.isKeyWindow }?.rootViewController)
+        while resultVC?.presentedViewController != nil {
+            resultVC = _topVC(resultVC?.presentedViewController)
+        }
     }
     return resultVC
 }
@@ -47,7 +49,7 @@ extension KingfisherWrapper where Base: KFCrossPlatformImageView {
     public func setBCImage(urlString: String?, placeholder: Placeholder? = UIImage(named: "normal_placeholder_h")) -> DownloadTask {
         return setImage(with: URL(string: urlString ?? ""),
                         placeholder: placeholder,
-                        options:[.transition(.fade(0.5))])!
+                        options:[.forceRefresh])!
     }
 }
 
